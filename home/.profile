@@ -29,3 +29,5 @@ export GOPATH=$HOME/Dev/Go
 
 #Add gopath/bin to PATH
 export PATH=$PATH:$GOPATH/bin
+
+export PATH=$PATH:~/.local/bin
