@@ -8,6 +8,8 @@
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 #BGCOLORCODE=${getColorCode background}
 #POWERLEVEL9K_USER_BACKGROUND='green'
 #POWERLEVEL9K_COLOR_SCHEME='light'
@@ -99,6 +101,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias settoken='export AWS_SECURITY_TOKEN=$AWS_SESSION_TOKEN'
+
 fpath=(~/.zsh/completion $fpath)
 autoload -Uz compinit && compinit -i
-
+eval `dircolors ~/.local/dircolors/dircolors.256dark`
