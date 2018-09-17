@@ -1,3 +1,4 @@
+set nocompatible
 syntax on
 colorscheme desert
 filetype plugin indent on

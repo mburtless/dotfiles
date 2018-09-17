@@ -103,6 +103,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias settoken='export AWS_SECURITY_TOKEN=$AWS_SESSION_TOKEN'
 
+#aliases to override DVTM TERM when SSHing
+alias ssh='TERM=xterm-256color ssh'
+alias sshch='TERM=xterm-256color sshch'
+
 fpath=(~/.zsh/completion $fpath)
 autoload -Uz compinit && compinit -i
 eval `dircolors ~/.local/dircolors/dircolors.256dark`
